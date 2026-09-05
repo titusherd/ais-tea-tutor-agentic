@@ -1,0 +1,14 @@
+# Risk register
+
+| risk_id | paper | phase | trigger | impact | early_signal | mitigation | contingency | owner | status | decision_id |
+|---|---|---|---|---|---|---|---|---|---|---|
+| RK-001 | ALL | 1 | Wave files are from incompatible releases | Invalid cross-wave merges | Release/hash mismatch | Compare archive release metadata and hashes | Freeze affected wave and revise estimand | analyst | open | D-002 |
+| RK-002 | ALL | 2 | pidlink/household keys are not unique | Duplicate or dropped people | isid/merge audit failure | Inspect observation unit and official tracking files | Stop and remap key | analyst | open |  |
+| RK-003 | R1 | 3 | Treatment is left-censored at W1 | Baseline controls may be post-treatment | Parent absent at W1 or unknown onset | Exclude from primary under D-012 and retain sensitivity status | Use later-onset estimand only | project_owner | mitigated_primary_open_sensitivity | D-012 |
+| RK-004 | R1 | 3 | International treatment cell is small | Unstable main/heterogeneity results | Support table below threshold | International-only treatment is locked; do not broaden silently | Report feasibility/descriptive only | project_owner | open_technical | D-010 |
+| RK-005 | R3 | 4 | Child-labor hours/unit are not comparable or age support is thin | Misclassified or underpowered treatment | W2/W3 hours support is 0/5/139 and 0/1/108 across the proposed age bands | Age 15 primary; codebook valid-code gate; younger bands descriptive only | Reframe affected result as feasibility/descriptive | analyst | mitigated_primary_open_technical | D-020/D-022 |
+| RK-006 | R3 | 4 | Hazardous-work mapping lacks authoritative coding | Misclassification/legal overclaim | Sector/occupation not traceable | Omit hazardous work from primary and retain raw descriptors | Versioned mapping in future supplementary work | project_owner | mitigated_primary_parked | D-023 |
+| RK-007 | ALL | 6 | Survey design fields are not verified | Incorrect inference/target population | Missing weight/PSU/strata evidence | Use documented estimand-specific clustered non-survey model as primary; keep official weighted sensitivity open | Stop weighted sensitivity | analyst | mitigated_primary_open_sensitivity | D-030 |
+| RK-008 | R3 | 8 | National headcount is incompatible | Invalid aggregation | Age/definition/reference-year mismatch | No national aggregate | Report per-child scenario only | project_owner | open | D-050 |
+| RK-009 | ALL | 7 | Output cannot reproduce from master | Review cannot verify findings | Hash/count/log mismatch | Clean rerun and audit | Mark release incomplete | analyst | open |  |
+| RK-010 | ALL | 1 | No Stata user-written package approval | Later methods fail | Missing command/package | Use built-ins first and register packages | Park method | project_owner | open | D-003 |

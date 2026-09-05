@@ -1,0 +1,35 @@
+paper,family,outcome,role,validity_rule,analysis_status,interpretation,source_artifact
+R1,labor,adult_employed,primary,TK01 valid activity codes 1 2 3 4 5 7 95,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,labor,adult_ln1p_salary_monthly,primary,TK25A1X=1 and TK25A1 in 0 to <999999997,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,labor,adult_ln1p_abs_profit,primary_candidate,TK26A1X=1/2 and TK26A1 in 0 to <999999999998,support_below_gate,not interpreted inferentially,99_docs/w5_outcome_definition.md
+R1,education,adult_college,primary,DL06 valid and codes 60 to 63,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,health,adult_srh_score,primary,KK01 1 to 4 and score 5-KK01,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,health,adult_good_health,primary,KK01 1 to 4 and good=1/2,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,health,adult_bmi_raw,primary,measured height/weight with declared biological limits,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,health,adult_health_adequacy,primary,SW06 1 to 3,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,social_behavioral,adult_current_smoker,primary,explicit KM cigarette/current-use recode,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,social_behavioral,adult_married,primary,PK00A 1 or 3,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,social_behavioral,adult_any_listed_condition,primary,CD01 collapsed yes/no with DK excluded,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,social_behavioral,adult_tr01_score,primary,TR01 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,social_behavioral,adult_tr02_score,primary,TR02 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,social_behavioral,adult_tr03_score,primary,TR03 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,social_behavioral,adult_tr04_score,primary,TR04 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,social_behavioral,adult_tr05_score,primary,TR05 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R1,social_behavioral,adult_tr06_score,primary,TR06 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,labor,adult_employed,primary,TK01 valid activity codes,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,labor,adult_ln1p_salary_monthly,primary,TK25A1X=1 and TK25A1 valid range,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,labor,adult_ln1p_abs_profit,primary,TK26A1X=1/2 and TK26A1 valid range,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,education,adult_college,primary,DL06 valid and codes 60 to 63,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,health,adult_srh_score,primary,KK01 1 to 4 and score 5-KK01,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,health,adult_good_health,primary,KK01 1 to 4 and good=1/2,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,health,adult_bmi_raw,primary,measured height/weight with declared biological limits,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,health,adult_health_adequacy,primary,SW06 1 to 3,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,social_behavioral,adult_current_smoker,primary,explicit KM cigarette/current-use recode,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,social_behavioral,adult_married,primary,PK00A 1 or 3,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,social_behavioral,adult_any_listed_condition,primary,CD01 collapsed yes/no with DK excluded,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,social_behavioral,adult_tr01_score,primary,TR01 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,social_behavioral,adult_tr02_score,primary,TR02 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,social_behavioral,adult_tr03_score,primary,TR03 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,social_behavioral,adult_tr04_score,primary,TR04 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,social_behavioral,adult_tr05_score,primary,TR05 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
+R3,social_behavioral,adult_tr06_score,primary,TR06 1 to 4 reverse score,estimated,adjusted association,99_docs/w5_outcome_definition.md
