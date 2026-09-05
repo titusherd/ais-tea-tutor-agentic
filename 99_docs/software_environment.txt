@@ -1,5 +1,5 @@
 Project root: local checkout root (derived from c(pwd))
-Run date:  5 Sep 2026 16:32:47
+Run date:  5 Sep 2026 17:13:40
 Stata version: 16.1
 Stata edition: Stata/SE (c(SE)=1; c(MP)=0; c(flavor)=IC)
 Operating system: Unix
