@@ -123,9 +123,9 @@ module is not presented as a complete CES-D-10 measure.
 
 For each outcome (Y_{i}), the primary specification is:
 
-\[
+$$
 Y_i = \alpha + \beta T_i + \gamma'X_i + \varepsilon_i,
-\]
+$$
 
 where (T_i) is the locked migration indicator and (X_i) contains W1 child
 age, child sex, household size, and linked mother and father ages. Estimates

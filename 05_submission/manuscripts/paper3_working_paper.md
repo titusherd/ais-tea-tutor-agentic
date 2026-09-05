@@ -124,9 +124,9 @@ observations. No PCE deflation, NPV, or national aggregation is reported.
 
 For each valid W5 outcome (Y_i), the first-pass specification is:
 
-\[
+$$
 Y_i = \alpha + \beta T_i + \gamma'X_i + \delta Wave_i + \varepsilon_i,
-\]
+$$
 
 where (X_i) contains W1 age, child sex, household size, and linked parent
 ages. `Wave` distinguishes W2 from W3. The model is unweighted, uses
