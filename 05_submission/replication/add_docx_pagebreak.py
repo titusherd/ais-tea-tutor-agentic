@@ -47,7 +47,7 @@ def add_break(path: Path, marker: str) -> None:
 
 
 if __name__ == "__main__":
-    root = Path("/Users/titus/Documents/ais-tea/05_submission/manuscripts")
+    root = Path(__file__).resolve().parents[1] / "manuscripts"
     add_break(root / "paper1_working_paper.docx", "Table 2. R1 adjusted associations")
     add_break(root / "paper3_working_paper.docx", "Table 2. R3 adjusted associations")
     print("DOCX_PAGEBREAK_PASS")
