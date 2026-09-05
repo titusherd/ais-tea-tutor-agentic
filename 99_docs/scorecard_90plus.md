@@ -36,6 +36,25 @@ technical gates; fields that require author input remain marked
 | Local handoff | `05_submission/final_project_package.html` | pass | pass with owner checklist linked |
 | External submission fields | title/cover templates | owner input required | explicitly tracked; never guessed |
 
+## Verified score after upgrade
+
+Verification date: 2026-09-05. The score below is the technical/reviewable
+delivery score, not a journal-readiness score.
+
+| Dimension | Verified points | Evidence and remaining deduction |
+|---|---:|---|
+| Pipeline integrity | 24 / 25 | Fresh `MASTER_PASS`; final and publication gates pass; no raw IFLS, derived data, logs, or credentials are tracked. One point remains reserved for unresolved external provenance. |
+| Data and method evidence | 24 / 25 | Locked estimands, crosswalks, source record, official RAND documentation, and internal reviewer reconciliation are present. Exact local-to-official release matching remains open. |
+| Reproducibility | 19 / 20 | Portable project-root Stata paths, refreshed environment record, full rerun, and DOCX/PDF render QA pass. Raw-data access cannot be reproduced from the repository alone by design. |
+| Result completeness | 15 / 15 | Full adjusted results, headline results, model registry, baseline descriptives, figures, synchronized Markdown/DOCX/PDF manuscripts, and reviewer traceability are present. |
+| Handoff discipline | 13 / 15 | Local hub, replication notes, owner checklist, provenance record, and explicit status labels are present. Author metadata/sign-off and external citation closure remain owner gates. |
+| **Total technical/reviewable score** | **95 / 100** | **90+ gate achieved with open items explicitly bounded.** |
+
+The 95/100 result is evidence-based and was not obtained by counting open owner
+fields as complete. It means the package is ready for internal review and
+handoff. It does not mean the package is ready for an external journal
+submission, nor does it change the non-causal interpretation of the estimates.
+
 ## Score interpretation
 
 - **90–100:** technically reviewable and handoff-ready; remaining owner gates

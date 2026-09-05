@@ -19,6 +19,15 @@ The primary estimates are unweighted adjusted associations with
 household-clustered robust VCE and outcome-specific listwise deletion. They
 are not causal effects.
 
+## Verified technical score
+
+After the 5 September 2026 full Stata rerun, artifact render QA, link checks,
+and repository safety checks, the technical/reviewable delivery score is
+**95/100**. The score is documented in `99_docs/scorecard_90plus.md` and
+reflects reproducibility, traceability, result completeness, and handoff
+discipline. It is not a journal acceptance probability and does not close the
+owner-dependent submission items below.
+
 ## Definition of ready
 
 The package is ready to send to a supervisor or internal reviewer when:
