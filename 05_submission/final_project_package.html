@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IFLS Research Package — Final Local Handoff</title>
+  <style>
+    :root {
+      --ink: #17211b;
+      --muted: #65736a;
+      --line: #dce5dd;
+      --paper: #fbfdfb;
+      --panel: #ffffff;
+      --green: #166534;
+      --green-soft: #eaf7ee;
+      --amber: #92400e;
+      --amber-soft: #fff7e6;
+      --blue: #174a73;
+      --blue-soft: #eef6ff;
+      --shadow: 0 14px 40px rgba(23, 33, 27, .08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: linear-gradient(135deg, #f2f8f3 0%, #fbfdfb 42%, #f5f8fc 100%);
+      font: 16px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main { max-width: 1120px; margin: 0 auto; padding: 36px 22px 72px; }
+    .eyebrow { color: var(--green); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 850px; margin: 9px 0 13px; font-size: clamp(2.1rem, 5vw, 4.25rem); line-height: 1.02; letter-spacing: -.05em; }
+    h2 { margin: 0 0 10px; font-size: 1.45rem; line-height: 1.2; }
+    h3 { margin: 0 0 7px; font-size: 1.05rem; }
+    p { margin: 0 0 12px; }
+    a { color: var(--blue); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .lede { max-width: 760px; color: #3c4b41; font-size: 1.08rem; }
+    .status { display: inline-flex; align-items: center; gap: 8px; margin: 12px 0 24px; padding: 8px 12px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-size: .78rem; font-weight: 800; letter-spacing: .04em; }
+    .status::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px rgba(34, 197, 94, .15); }
+    .hero, .panel { background: rgba(255,255,255,.92); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); }
+    .hero { padding: 28px; margin-bottom: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 14px 0 22px; }
+    .metric { padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
+    .metric strong { display: block; margin-bottom: 2px; font-size: 2rem; line-height: 1; letter-spacing: -.04em; }
+    .metric span { color: var(--muted); font-size: .88rem; }
+    .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .panel { padding: 22px; }
+    .panel.full { grid-column: 1 / -1; }
+    .panel p:last-child { margin-bottom: 0; }
+    .panel ul { margin: 10px 0 0; padding-left: 20px; }
+    .panel li { margin: 6px 0; }
+    .link-list { display: grid; gap: 9px; margin-top: 14px; }
+    .link { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 11px 13px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+    .link small { display: block; color: var(--muted); font-weight: 500; }
+    .link .arrow { flex: 0 0 auto; color: var(--green); font-size: 1.2rem; }
+    .callout { margin-top: 15px; padding: 14px 16px; border-left: 4px solid var(--amber); border-radius: 8px; background: var(--amber-soft); color: #713f12; }
+    .callout.blue { border-left-color: var(--blue); background: var(--blue-soft); color: #23435f; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: .93rem; }
+    th, td { padding: 9px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { color: var(--muted); font-size: .76rem; letter-spacing: .05em; text-transform: uppercase; }
+    .small { color: var(--muted); font-size: .9rem; }
+    footer { margin-top: 24px; color: var(--muted); font-size: .85rem; }
+    @media (max-width: 760px) {
+      main { padding: 24px 14px 52px; }
+      .grid, .cards { grid-template-columns: 1fr; }
+      .panel.full { grid-column: auto; }
+      .hero { padding: 21px; }
+      .link { align-items: flex-start; }
+    }
+    @media print {
+      main { max-width: none; padding: 12px; }
+      .hero, .panel { box-shadow: none; }
+      .cards { grid-template-columns: 1fr; }
+      .panel.full { grid-column: auto; }
+      .link { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">IFLS · local research handoff</div>
+      <h1>Paket riset yang siap dibaca dan direview.</h1>
+      <p class="lede">Ini adalah paket final lokal untuk first-pass Riset 1 dan Riset 3, plus memo kelayakan Riset 2. Semua hasil di bawah berasal dari pipeline Stata yang terkunci. Buka dokumen yang ingin dipelajari; tidak ada kebutuhan untuk mengunduh ulang file.</p>
+      <div class="status">READY FOR INTERNAL REVIEW · external items masih terbuka</div>
+      <div class="grid">
+        <div class="metric"><strong>R1 · 25</strong><span>treated di common frame; 3.822 control</span></div>
+        <div class="metric"><strong>R3 · 44</strong><span>treated di common frame; 709 control</span></div>
+        <div class="metric"><strong>33 + 14</strong><span>full adjusted rows + headline rows</span></div>
+      </div>
+      <div class="callout"><strong>Batas penting:</strong> semua koefisien adalah adjusted associations, bukan causal effects. Riset 2, IMDI final, CES-D-10, NPV, dan national loss tidak diklaim sebagai hasil.</div>
+    </section>
+
+    <section class="cards">
+      <article class="panel">
+        <h2>Mulai dari sini</h2>
+        <p class="small">Dokumen yang paling cepat memberi gambaran menyeluruh.</p>
+        <div class="link-list">
+          <a class="link" href="final_results_memo.md"><span>Memo hasil akhir<div><small>Narasi Indonesia, fakta vs inferensi, dan batas klaim</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="README_FINAL_DELIVERY.md"><span>README paket<div><small>Status, isi paket, dan cara reproduksi</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="manuscripts/cover_note_template.md"><span>Cover note / checklist<div><small>Teks pengantar untuk review internal</small></div></span><span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>Manuskrip</h2>
+        <p class="small">Draft anonim bergaya Research Note untuk target kerja IJSW; author details dipisah.</p>
+        <div class="link-list">
+          <a class="link" href="manuscripts/paper1_working_paper.pdf"><span>Paper 1 · R1 PDF<div><small>Maternal migration → W5 adult outcomes</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="manuscripts/paper1_working_paper.docx"><span>Paper 1 · R1 DOCX<div><small>File kerja anonim untuk author/journal formatting</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="manuscripts/paper1_working_paper.md"><span>Paper 1 · R1 Markdown<div><small>Sumber naskah yang dapat diaudit</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="manuscripts/paper3_working_paper.pdf"><span>Paper 3 · R3 PDF<div><small>Age-15 market child labor → W5 adult outcomes</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="manuscripts/paper3_working_paper.docx"><span>Paper 3 · R3 DOCX<div><small>File kerja anonim untuk author/journal formatting</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="manuscripts/paper3_working_paper.md"><span>Paper 3 · R3 Markdown<div><small>Sumber naskah yang dapat diaudit</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="manuscripts/paper2_feasibility_memo.md"><span>Paper 2 · parked<div><small>Memo kelayakan; tidak ada hasil substantif</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="manuscripts/title_page_template.md"><span>Title-page template<div><small>Harus diisi dari metadata penulis yang dikonfirmasi</small></div></span><span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>Tabel & figur</h2>
+        <p class="small">File aggregate yang dapat dibaca reviewer tanpa raw microdata.</p>
+        <div class="link-list">
+          <a class="link" href="tables/headline_adjusted_results.csv"><span>Headline adjusted results<div><small>14 baris, dipilih sebelum hasil dibaca</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="tables/all_adjusted_primary_results.csv"><span>Full adjusted results<div><small>33 baris, termasuk status support</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="tables/baseline_descriptives.csv"><span>Baseline descriptives<div><small>mean dan SD per paper × treatment group</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="tables/model_registry.csv"><span>Model registry<div><small>spesifikasi, N, dan alasan omission</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="figures/first_pass_coefficients_R1.png"><span>Figure · R1 coefficients<div><small>plot hasil adjusted first pass</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="figures/first_pass_coefficients_R3.png"><span>Figure · R3 coefficients<div><small>plot hasil adjusted first pass</small></div></span><span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>Reproduksi & audit</h2>
+        <p class="small">Jejak yang menghubungkan naskah dengan Stata dan quality gates.</p>
+        <div class="link-list">
+          <a class="link" href="replication/README.md"><span>Replication handoff<div><small>data-sharing boundary dan evidence levels</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="../dofiles/00_master.do"><span>Canonical Stata master<div><small>entry point untuk rerun seluruh chain</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="../99_docs/execution_status_2026-09-05.md"><span>Execution status<div><small>sample flow, gate, dan open provenance</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="../99_docs/reviewer_evidence_matrix.csv"><span>Reviewer evidence matrix<div><small>pertanyaan reviewer dan bukti yang tersedia</small></div></span><span class="arrow">↗</span></a>
+          <a class="link" href="../99_docs/citation_audit.csv"><span>Citation audit<div><small>source resmi yang sudah dicek vs open</small></div></span><span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="panel full">
+        <h2>Headline results</h2>
+        <p class="small">Ringkasan angka yang boleh dipakai dalam narasi. “q” adalah BH q-value di dalam paper × outcome family.</p>
+        <table>
+          <thead><tr><th>Paper</th><th>Outcome</th><th>Estimate</th><th>95% CI</th><th>q</th><th>N / treated</th></tr></thead>
+          <tbody>
+            <tr><td>R1</td><td>College attainment</td><td>−20,7 pp</td><td>−30,2 to −11,3</td><td>&lt;0,001</td><td>3.638 / 22</td></tr>
+            <tr><td>R1</td><td>Good self-rated health</td><td>+11,2 pp</td><td>+2,7 to +19,7</td><td>0,041</td><td>3.644 / 23</td></tr>
+            <tr><td>R3</td><td>College attainment</td><td>−17,0 pp</td><td>−20,6 to −13,3</td><td>&lt;0,001</td><td>719 / 43</td></tr>
+            <tr><td>R3</td><td>Married/cohabiting</td><td>+3,0 pp</td><td>+1,0 to +5,0</td><td>0,029</td><td>623 / 39</td></tr>
+            <tr><td>R3</td><td>Trust item 3 score</td><td>+0,292</td><td>+0,082 to +0,502</td><td>0,029</td><td>704 / 39</td></tr>
+          </tbody>
+        </table>
+        <div class="callout blue"><strong>Cara membaca:</strong> ini adalah perbedaan kondisional dalam sample yang dikunci, bukan dampak kebijakan, prevalence nasional, atau efek kausal. Gunakan memo hasil dan manuskrip untuk konteks serta keterbatasan.</div>
+      </article>
+
+      <article class="panel full">
+        <h2>Sebelum submission jurnal eksternal</h2>
+        <ul>
+          <li>Lengkapi title page dengan nama, afiliasi, ORCID, corresponding author, funding, ethics, dan acknowledgements yang dikonfirmasi penulis.</li>
+          <li>Tutup exact IFLS release provenance dan wording authorized-data access.</li>
+          <li>Verifikasi seluruh literatur eksternal dari concept note/deck terhadap sumber primer.</li>
+          <li>Review substantif semua estimasi, tabel, dan batas klaim.</li>
+          <li>Jangan mengunggah atau membagikan raw IFLS microdata.</li>
+        </ul>
+        <p class="small">Target kerja saat ini: <a href="../99_docs/journal_target_register.md">International Journal of Social Welfare</a>. Target ini sudah dicek pada level scope/guidelines, bukan jaminan editorial fit atau acceptance.</p>
+      </article>
+    </section>
+
+    <footer>Local-only handoff · dibuat 5 September 2026 · sumber tetap berada di workspace lokal.</footer>
+  </main>
+</body>
+</html>
