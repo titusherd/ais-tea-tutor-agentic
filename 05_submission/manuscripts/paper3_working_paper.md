@@ -45,12 +45,17 @@ calculation. Those extensions require separate data and identification gates.
 
 ## 2. Data and study population
 
-The IFLS is a longitudinal household survey. The official RAND survey page
-documents its wave history and coverage, while the IFLS5 field report provides
-fieldwork and documentation context (RAND, 2016; RAND, n.d.). This project
-uses local IFLS files and preserves the raw source folder. The exact official
-source-release identifier remains an open provenance item in the local
-manifest and must be closed before a public replication package is released.
+The IFLS is an ongoing longitudinal survey with repeated waves and information
+at individual, household, community, and facility levels. RAND's official
+study-design and data-notes pages document the wave structure, record units,
+tracking guidance, skip patterns, and special codes; the IFLS5 field report
+provides fieldwork and documentation context (RAND, 2016; RAND, n.d.-a;
+RAND, n.d.-b; RAND, n.d.-c). RAND's access page requires registration for
+public-use data, separates restricted-use access, prohibits redistribution, and
+requires acknowledgement of IFLS (RAND, n.d.-d). This project uses locally
+held IFLS files and preserves the raw source folder. The exact official
+source-release identifier and owner access record remain open and are not
+inferred from local hashes.
 
 The treatment unit is a person-wave observation from W2 (1997) or W3 (2000).
 The primary treatment population is restricted to persons aged exactly 15 at
@@ -251,5 +256,15 @@ RAND Corporation. (2016). *The Fifth Wave of the Indonesia Family Life
 Survey: Overview and Field Report*. WR-1143/1-NIA/NICHD.
 https://www.rand.org/content/dam/rand/pubs/working_papers/WR1100/WR1143z1/RAND_WR1143z1.pdf
 
-RAND Corporation. (n.d.). *Indonesia Family Life Survey*.
+RAND Corporation. (n.d.-a). *Indonesia Family Life Survey*.
 https://www.rand.org/health/surveys/FLS/IFLS.html
+
+RAND Corporation. (n.d.-b). *The IFLS Study Design*.
+https://www.rand.org/health/surveys/FLS/IFLS/study.html
+
+RAND Corporation. (n.d.-c). *IFLS Data Updates, Data Notes, Tips, and FAQs*.
+https://www.rand.org/health/surveys/FLS/IFLS/datanotes.html
+
+RAND Corporation. (n.d.-d). *Register to Download Indonesian Family Life
+Survey (IFLS) Data*.
+https://www.rand.org/health/surveys/FLS/IFLS/access.html

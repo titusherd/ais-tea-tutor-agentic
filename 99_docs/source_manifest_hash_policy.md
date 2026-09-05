@@ -8,6 +8,7 @@ byte size and SHA-256 hash without changing any raw data.
 
 The recorded hash proves the identity of the local extracted file at the time
 of the audit. It does not prove the official IFLS release identifier,
-download provenance, or license. Those fields remain explicitly pending until
-the original release documentation is available. No release identity is
-inferred from a filename or a hash.
+download provenance, registration status, or license. The official design and
+access evidence is recorded in `99_docs/source_provenance_record.md`, but the
+local-file-to-release match and owner access record remain explicitly pending.
+No release identity is inferred from a filename, local path, or hash.
