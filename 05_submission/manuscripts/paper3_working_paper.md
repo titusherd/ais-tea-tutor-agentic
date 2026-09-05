@@ -151,6 +151,10 @@ adjusted results file contains all outcome-family rows.
 
 ### Table 2. R3 adjusted associations in the common first-pass frame
 
+The `N / treated` column is outcome-specific after valid-code and listwise
+deletion; it is not the common-frame count of 753 observations and 44 treated
+observations.
+
 | Outcome | Estimate | 95% CI | p; BH q | N / treated |
 |---|---:|---:|---:|---:|
 | College attainment (pp) | -16.95 | [-20.57, -13.32] | <0.001; <0.001 | 719 / 43 |
