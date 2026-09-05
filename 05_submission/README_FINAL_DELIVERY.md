@@ -19,6 +19,7 @@ eksternal yang diperlukan untuk membaca paket.
 - `replication/` — reproduction and data-sharing instructions
 - `manuscripts/title_page_template.md` — author metadata still required
 - `manuscripts/cover_note_template.md` — internal handoff/submission checklist
+- `../99_docs/scorecard_90plus.md` — evidence-based technical readiness scorecard
 
 ## One-line status
 
