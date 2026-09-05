@@ -19,7 +19,9 @@ eksternal yang diperlukan untuk membaca paket.
 - `replication/` — reproduction and data-sharing instructions
 - `manuscripts/title_page_template.md` — author metadata still required
 - `manuscripts/cover_note_template.md` — internal handoff/submission checklist
+- `manuscripts/author_metadata_and_submission_checklist.md` — explicit owner and submission gates
 - `../99_docs/scorecard_90plus.md` — evidence-based technical readiness scorecard
+- `../99_docs/internal_reviewer_report.md` — internal numerical and claim reconciliation
 
 ## One-line status
 
@@ -30,8 +32,8 @@ external journal submission, acceptance, or causal evidence package.
 
 ## Re-run
 
-From `/Users/titus/Documents/ais-tea`, run the verified Stata executable from
-`99_docs/software_environment.txt` with:
+From the project root of an authorized local checkout, run the verified Stata
+executable described in `99_docs/software_environment.txt` with:
 
 ```text
 dofile dofiles/00_master.do
