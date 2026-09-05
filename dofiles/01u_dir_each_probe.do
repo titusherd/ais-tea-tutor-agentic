@@ -1,0 +1,27 @@
+version 16.0
+clear all
+set more off
+local raw "/Users/titus/Documents/ais-tea/00_raw"
+local roots ///
+    "`raw'/wave1_hh93" ///
+    "`raw'/wave1_cf93" ///
+    "`raw'/wave2_hh97" ///
+    "`raw'/wave2_cf97" ///
+    "`raw'/wave3_hh00" ///
+    "`raw'/wave3_cf00" ///
+    "`raw'/wave4_hh07" ///
+    "`raw'/wave4_cf07" ///
+    "`raw'/wave5_hh14" ///
+    "`raw'/wave5_cf14"
+foreach root of local roots {
+    display as text "TRY root=`root'"
+    capture local files : dir "`root'" files "*.dta"
+    local rc_dir = _rc
+    display as text "DIR_RC=`rc_dir' FILES_LEN=`: length local files'"
+    if `rc_dir' == 0 {
+        capture local nfiles : word count `files'
+        local rc_count = _rc
+        display as text "COUNT_RC=`rc_count' NFILES=`nfiles'"
+    }
+}
+exit 0
