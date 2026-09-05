@@ -93,9 +93,9 @@ observed and hours are between 0 and 168. Job 2 is either explicitly absent or
 has a valid status and hours in the same range. Total weekly hours are job 1
 hours plus job 2 hours when a second job is present. The primary treatment is:
 
-\[
+$$
 T_i = 1\{\text{valid market-work screen and total hours} > 43\}.
-\]
+$$
 
 The screen uses the observed activity indicators documented in the treatment
 definition. A person is a control only when the screen and hours provide
