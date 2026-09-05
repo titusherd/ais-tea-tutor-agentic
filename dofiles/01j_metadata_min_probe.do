@@ -1,7 +1,8 @@
 version 16.0
 clear all
 set more off
-local root "/Users/titus/Documents/ais-tea/00_raw/wave5_hh14"
+local project = c(pwd)
+local root "`project'/00_raw/wave5_hh14"
 local wave "unknown"
 local source_id "unknown"
 local archive "unknown"

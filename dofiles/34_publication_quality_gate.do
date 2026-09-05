@@ -2,7 +2,7 @@ version 16.0
 clear all
 set more off
 
-local project "/Users/titus/Documents/ais-tea"
+local project = c(pwd)
 local output "`project'/04_output"
 local submission "`project'/05_submission"
 local diagnostics "`output'/diagnostics"

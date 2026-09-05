@@ -1,7 +1,9 @@
 version 16.0
 clear all
 set more off
-local raw "/Users/titus/Documents/ais-tea/00_raw"
+local project = c(pwd)
+local raw "`project'/00_raw"
+local output "`project'/04_output"
 local roots ///
     "`raw'/wave1_hh93" ///
     "`raw'/wave1_cf93" ///
@@ -13,7 +15,7 @@ local roots ///
     "`raw'/wave4_cf07" ///
     "`raw'/wave5_hh14" ///
     "`raw'/wave5_cf14"
-log using "/Users/titus/Documents/ais-tea/01h_root_if_probe.log", text replace
+log using "`output'/logs/01h_root_if_probe.log", text replace
 foreach root of local roots {
     local wave "unknown"
     local source_id "unknown"

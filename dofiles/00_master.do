@@ -3,10 +3,16 @@ clear all
 set more off
 set seed 9042026
 
-local project "/Users/titus/Documents/ais-tea"
+local project = c(pwd)
 local output "`project'/04_output"
 local run_date "`c(current_date)'"
 local run_time "`c(current_time)'"
+
+capture confirm file "`project'/dofiles/00_master.do"
+if _rc {
+    display as error "PROJECT_ROOT_ERROR=run dofiles/00_master.do from the project root"
+    exit 601
+}
 
 cd "`project'"
 file open master using "`output'/logs/00_master.log", write replace

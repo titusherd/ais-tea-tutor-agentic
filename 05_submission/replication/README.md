@@ -8,8 +8,8 @@ identifiers, restricted fields, or sensitive linked derivatives.
 
 ## Canonical command
 
-From `/Users/titus/Documents/ais-tea`, use the Stata executable recorded in
-`99_docs/software_environment.txt` and run:
+From the project root of an authorized local checkout, use the Stata executable
+recorded in `99_docs/software_environment.txt` and run:
 
 ```text
 dofile dofiles/00_master.do
@@ -20,6 +20,10 @@ The chain ends with:
 - `dofiles/32_publication_support_audit.do`
 - `dofiles/33_publication_outputs.do`
 - `dofiles/34_publication_quality_gate.do`
+
+The scripts derive the project root from Stata's `c(pwd)` and fail fast when
+the canonical command is not started from the project root. This keeps the
+chain portable across local checkout paths.
 
 ## Evidence levels
 

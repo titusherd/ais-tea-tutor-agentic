@@ -2,7 +2,11 @@
 
 ## Current state
 
-This project uses Stata batch execution from `/Users/titus/Documents/ais-tea`. The original IFLS source folder is preserved. Derived data belong in `01_clean`, `02_derived`, and `03_analysis`; logs, diagnostics, tables, and figures belong in `04_output`.
+This project uses Stata batch execution from the project root of an authorized
+local checkout. The original IFLS source folder is preserved. Derived data
+belong in `01_clean`, `02_derived`, and `03_analysis`; logs, diagnostics,
+tables, and figures belong in `04_output`. The canonical scripts derive the
+root from Stata's `c(pwd)` and fail fast if they are not run from that root.
 
 ## Current review gate
 

@@ -3,13 +3,19 @@ clear all
 set more off
 set seed 9042026
 
-local project "/Users/titus/Documents/ais-tea"
+local project = c(pwd)
 local raw "`project'/00_raw"
 local clean "`project'/01_clean"
 local derived "`project'/02_derived"
 local analysis "`project'/03_analysis"
 local output "`project'/04_output"
 local docs "`project'/99_docs"
+
+capture confirm file "`project'/dofiles/00_master.do"
+if _rc {
+    display as error "PROJECT_ROOT_ERROR=run the canonical chain from the project root"
+    exit 601
+}
 
 cd "`project'"
 log using "`output'/logs/01_setup_paths_and_environment.log", text replace
@@ -59,13 +65,13 @@ global wave5_hh "`raw'/wave5_hh14"
 global wave5_cf "`raw'/wave5_cf14"
 
 file open env using "`docs'/software_environment.txt", write replace
-file write env "Project root: `project'" _n
+file write env "Project root: local checkout root (derived from c(pwd))" _n
 file write env "Run date: `c(current_date)' `c(current_time)'" _n
 file write env "Stata version: `c(stata_version)'" _n
 file write env "Stata edition: Stata/SE (c(SE)=`c(SE)'; c(MP)=`c(MP)'; c(flavor)=`c(flavor)')" _n
 file write env "Operating system: `c(os)'" _n
 file write env "Seed: 9042026" _n
-file write env "Executable: /Applications/Stata/StataSE.app/Contents/MacOS/stata-se" _n
+file write env "Executable: Stata/SE binary (verification-host path intentionally omitted)" _n
 file write env "User-written packages: see 04_output/diagnostics/package_inventory.txt" _n
 file close env
 

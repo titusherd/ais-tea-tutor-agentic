@@ -3,7 +3,7 @@ clear all
 set more off
 set seed 9042026
 
-local project "/Users/titus/Documents/ais-tea"
+local project = c(pwd)
 local output "`project'/04_output"
 
 cd "`project'"

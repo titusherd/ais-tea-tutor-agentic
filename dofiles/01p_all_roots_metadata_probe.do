@@ -1,7 +1,9 @@
 version 16.0
 clear all
 set more off
-local roots "/Users/titus/Documents/ais-tea/00_raw/wave1_hh93 /Users/titus/Documents/ais-tea/00_raw/wave1_cf93 /Users/titus/Documents/ais-tea/00_raw/wave2_hh97 /Users/titus/Documents/ais-tea/00_raw/wave2_cf97 /Users/titus/Documents/ais-tea/00_raw/wave3_hh00 /Users/titus/Documents/ais-tea/00_raw/wave3_cf00 /Users/titus/Documents/ais-tea/00_raw/wave4_hh07 /Users/titus/Documents/ais-tea/00_raw/wave4_cf07 /Users/titus/Documents/ais-tea/00_raw/wave5_hh14 /Users/titus/Documents/ais-tea/00_raw/wave5_cf14"
+local project = c(pwd)
+local raw "`project'/00_raw"
+local roots "`raw'/wave1_hh93 `raw'/wave1_cf93 `raw'/wave2_hh97 `raw'/wave2_cf97 `raw'/wave3_hh00 `raw'/wave3_cf00 `raw'/wave4_hh07 `raw'/wave4_cf07 `raw'/wave5_hh14 `raw'/wave5_cf14"
 foreach root of local roots {
     local wave "unknown"
     local source_id "unknown"

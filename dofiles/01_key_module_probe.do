@@ -3,7 +3,7 @@ clear all
 set more off
 set seed 9042026
 
-local project "/Users/titus/Documents/ais-tea"
+local project = c(pwd)
 log using "`project'/04_output/logs/01_key_module_probe.log", text replace
 
 local files ///

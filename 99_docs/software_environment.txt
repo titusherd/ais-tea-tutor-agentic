@@ -1,8 +1,8 @@
-Project root: /Users/titus/Documents/ais-tea
-Run date:  5 Sep 2026 15:27:48
+Project root: local checkout root (derived from c(pwd))
+Run date:  5 Sep 2026 16:32:47
 Stata version: 16.1
 Stata edition: Stata/SE (c(SE)=1; c(MP)=0; c(flavor)=IC)
 Operating system: Unix
 Seed: 9042026
-Executable: /Applications/Stata/StataSE.app/Contents/MacOS/stata-se
+Executable: Stata/SE binary (verification-host path intentionally omitted)
 User-written packages: see 04_output/diagnostics/package_inventory.txt

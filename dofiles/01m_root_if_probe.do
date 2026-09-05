@@ -1,7 +1,9 @@
 version 16.0
 clear all
 set more off
-local roots "/Users/titus/Documents/ais-tea/00_raw/wave1_hh93 /Users/titus/Documents/ais-tea/00_raw/wave1_cf93"
+local project = c(pwd)
+local raw "`project'/00_raw"
+local roots "`raw'/wave1_hh93 `raw'/wave1_cf93"
 foreach root of local roots {
     display as text "BEGIN root=`root'"
     local wave "unknown"

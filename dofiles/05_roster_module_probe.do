@@ -2,7 +2,7 @@ version 16.0
 clear all
 set more off
 
-local project "/Users/titus/Documents/ais-tea"
+local project = c(pwd)
 local raw "`project'/00_raw"
 local output "`project'/04_output"
 
