@@ -1,0 +1,34 @@
+# macOS and editor noise
+.DS_Store
+._*
+*~
+
+# Restricted/raw survey inputs
+00_raw/
+IFLS/
+IFLS.zip
+*.zip
+
+# Generated and intermediate analysis data
+01_clean/
+02_derived/
+03_analysis/
+04_output/
+*.dta
+*.gph
+*.log
+*.smcl
+
+# Source planning files supplied at the project root
+/*.pptx
+/*.docx
+
+# Generated visual QA renders
+05_submission/rendered/
+
+# Empty nested checkout discovered during repository inspection
+/ais-tea-tutor-agentic/
+
+# Local-only metadata that exposes the source-file environment
+/99_docs/source_manifest.csv
+/99_docs/cohort_age_matrix.dta
